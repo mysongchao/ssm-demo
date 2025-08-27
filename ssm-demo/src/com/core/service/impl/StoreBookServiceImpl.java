@@ -31,7 +31,7 @@ public class StoreBookServiceImpl implements StoreBookService {
                 s.setBook(bookDao.getBookById(s.getBookId()));
                 s.setStore(storeDao.getStoreById(s.getStoreId()));
             } catch (Exception e) {
-                e.printStackTrace();
+                
                 System.out.println("书架信息错误," + s.getBookId() + "," + s.getStoreId());
             }
         }

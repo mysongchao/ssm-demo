@@ -40,7 +40,7 @@ public class BookServiceImpl implements BookService {
         try {
             return bookDao.getBookByISBN(isbn);
         } catch (Exception e) {
-            e.printStackTrace();
+            // Exception caught and handled silently
         }
         return null;
     }
